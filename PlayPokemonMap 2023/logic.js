@@ -51,7 +51,7 @@ fetch("./Output/countrydata.json").then((file) => {
             fillOpacity: 0.75,
             color: "white",
             fillColor: playerCountColor,
-            radius: Math.sqrt(country.playercount) * 100000,
+            radius: Math.sqrt(country.playercount) * 50000,
           }).bindPopup(
             `<h1>${country.country}</h1> <hr> <h3>Total Player Count: ${country.playercount}</h3> <h3>Player Count: ${country.playercount}</h3>`
           )
@@ -62,7 +62,7 @@ fetch("./Output/countrydata.json").then((file) => {
             fillOpacity: 0.75,
             color: "white",
             fillColor: countryScoreColor,
-            radius: Math.sqrt(country.score) * 10000,
+            radius: Math.sqrt(country.score) * 3000,
           }).bindPopup(
             `<h1>${country.country}</h1> <hr> <h3>Total Championship Points: ${country.score}</h3> <h3>Player Count: ${country.playercount}</h3>`
           )
